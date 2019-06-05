@@ -1,59 +1,80 @@
 <nav class="navbar navbar-expand-md  navbar-dark" style="background-color: #1c3160;">
     
     <a class="navbar-brand imagenHeader-i" style="display: none" href="/">
-        Sigvaris
+        Mascotas
     </a>
-        {{-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button> --}}
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                
-                     <li class="nav-item dropdown active">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                        Proveedores
+                        <i class="fa fa-lock"></i><strong> Seguridad</strong>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('provedores.create') }}"><span>Alta</span><i class="fa fa-plus float-right"></i></a>
-                        <a class="dropdown-item" href="{{ route('provedores.index') }}"><span>Buscar</span><i class="fa fa-search float-right"></i></a>
+                        <a class="dropdown-item" href="{{-- route('perfils.index') --}}">
+                            <i class="fa fa-universal-access"></i><strong> Perfiles</strong>
+                        </a>
+                        <a class="dropdown-item" href="{{-- route('usuarios.index') --}}">
+                            <i class="fa fa-user-circle"></i><strong> Usuarios</strong>
+                        </a>
                     </div>
-                </li>      
-                
-
-                
-                   {{--  <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                            Pacientes
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="}"><span>Alta</span><i class="fa fa-plus float-right"></i></a>
-                            <a class="dropdown-item" href=""><span>Buscar</span><i class="fa fa-search float-right"></i></a>
-                        </div>
-                    </li> --}}                
-                
-                
-                
-                    {{-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                            Doctores
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href=""><span>Alta</span><i class="fa fa-plus float-right"></i></a>
-                            <a class="dropdown-item" href=""><span>Buscar</span><i class="fa fa-search float-right"></i></a>
-                        </div>
-                    </li> --}}
-                
-
-                
-                    <li class="nav-item dropdown">
+                </li>              
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                        Recursos Humanos
+                        <i class="fas fa-briefcase"></i><strong> Recursos Humanos</strong>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{{url('empleados/create')}}"><span>Alta</span><i class="fa fa-plus float-right"></i></a>
                         <a class="dropdown-item" href="{{ url('empleados') }}"><span>Buscar</span><i class="fa fa-search float-right"></i></a>
                     </div>
                 </li>  
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                       <i class="fas fa-book-open"></i><strong> Servicios</strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('provedores.create') }}"><span>Alta</span><i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="{{ route('provedores.index') }}"><span>Buscar</span><i class="fa fa-search float-right"></i></a>
+                    </div>
+                </li> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        <i class="fas fa-cart-arrow-down"></i><strong> Punto de venta</strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('provedores.create') }}"><span>lorem</span><i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="{{ route('provedores.index') }}"><span>lorem</span><i class="fa fa-search float-right"></i></a>
+                    </div>
+                </li> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        <i class="fas fa-file-invoice"></i><strong> Reportes</strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('provedores.create') }}"><span>lorem</span><i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="{{ route('provedores.index') }}"><span>lorem</span><i class="fa fa-search float-right"></i></a>
+                    </div>
+                </li>   
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        <i class="fas fa-truck"></i><strong> Provedores</strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('provedores.create') }}"><span>Alta</span><i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="{{ route('provedores.index') }}"><span>Buscar</span><i class="fa fa-search float-right"></i></a>
+                    </div>
+                </li> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        <i class="fas fa-paw"></i><strong> Pet life</strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('pacientes.create') }}"><span>Alta Paciente</span> <i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="{{ route('pacientes.index') }}"><span>Buscar Paciente</span> <i class="fa fa-search"></i></a>
+                    </div>
+                </li>      
                 
                 
                 
@@ -156,7 +177,7 @@
         </div>
     </nav>
 </div>
-<!-- <div class="row m-0 p-0 text-white" style="background-color: #1c3160;">
+{{-- <div class="row m-0 p-0 text-white" style="background-color: #1c3160;">
     <div class="col">
         <ul id="pestanias" class="nav nav-tabs">
             <li id="pestania_1" class="nav-item">
@@ -164,7 +185,7 @@
             </li>
         </ul>
     </div>
-</div> -->
+</div> --}}
 <script>
 
     var no_pestanias = 0;

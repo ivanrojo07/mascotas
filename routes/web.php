@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// SEGURIDAD
+Route::resource('usuarios', 'Usuario\UsuarioController');
+Route::resource('perfils', 'Perfil\PerfilController');
+Route::resource('prospectos.cotizacions.pagos','Prospecto\Cotizacion\PagoInscripcionController');
+
 //Recursos humanos
 Route::resource('empleados','Empleado\EmpleadoController');
 Route::resource('empleados.laborals','Empleado\LaboralController');
@@ -31,10 +36,12 @@ Route::post('unirVendedor', 'Vendedor\VendedorController@unir')->name('vendedore
 Route::get('empleados/laborals/{empleado}/new-laboral', 'Empleado\LaboralController@newLaboral')->name('empleados.laborals.createLaborals');
 Route::post('empleados/laborals/{empleado}/add', 'Empleado\LaboralController@addLaborals')->name('empleados.laborals.addLaborals');
 
-
 //Proveedores
 Route::resource('provedores','Provedor\ProvedorController');
 Route::resource('provedores.direccionfisica','Provedor\ProvedorDireccionFisicaController');
 Route::resource('provedores.datosgenerales','Provedor\ProvedorDatosGeneralesController');
 Route::resource('provedores.contacto','Provedor\ProvedorContactoController');
 Route::resource('provedores.datosbancarios','Provedor\ProveedorDatosBancariosController');
+
+//Pacientes
+Route::resource('pacientes', 'Paciente\PacienteController');
