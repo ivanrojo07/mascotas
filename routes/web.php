@@ -16,9 +16,8 @@ Route::get('/', function () {
 });
 
 // SEGURIDAD
-Route::resource('usuarios', 'Usuario\UsuarioController');
-Route::resource('perfils', 'Perfil\PerfilController');
-Route::resource('prospectos.cotizacions.pagos','Prospecto\Cotizacion\PagoInscripcionController');
+//Route::resource('usuarios', 'Usuario\UsuarioController');
+//Route::resource('perfils', 'Perfil\PerfilController');
 
 //Recursos humanos
 Route::resource('empleados','Empleado\EmpleadoController');
@@ -28,11 +27,6 @@ Route::resource('empleados.emergencias','Empleado\EmpleadosEmergenciasController
 Route::resource('empleados.vacaciones','Empleado\EmpleadosVacacionesController');
 Route::resource('empleados.faltas','Empleado\EmpleadosFaltasAdministrativasController');
 Route::get('buscarempleado','Empleado\EmpleadoController@buscar');
-Route::resource('vendedors','Vendedor\VendedorController');
-Route::get('vendedors/{vendedor}/baja','Vendedor\VendedorController@bajar')->name('vendedors.baja');
-Route::get('vendedors/{vendedor}/alta','Vendedor\VendedorController@activar')->name('vendedors.alta');
-Route::get('asignarVendedores', 'Vendedor\VendedorController@asignar')->name('vendedor.asignar');
-Route::post('unirVendedor', 'Vendedor\VendedorController@unir')->name('vendedores.unir');
 Route::get('empleados/laborals/{empleado}/new-laboral', 'Empleado\LaboralController@newLaboral')->name('empleados.laborals.createLaborals');
 Route::post('empleados/laborals/{empleado}/add', 'Empleado\LaboralController@addLaborals')->name('empleados.laborals.addLaborals');
 

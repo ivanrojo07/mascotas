@@ -9,7 +9,7 @@ class Paciente extends Model
 {
 	use SoftDeletes;
 
-	protected $table = 'pacientes';
+	protected $table = 'duenio';
 
 	protected $dates = ['deleted_at'];
 
@@ -18,11 +18,25 @@ class Paciente extends Model
         'nombre_dueño',
         'appaterno_dueño',
         'apmaterno_dueño',
-        'nombre_mascota',
-        'raza',
+        'rfc',
+        'noticias',
         'telefono',
+        'whatsapp',
         'celular',
         'correo'
     ];
+
+    protected $hidden = [
+        'updated_at', 'created_at', 'deleted_at'
+    ];
+
+    public function mascota()
+    {
+        return $this->hasOne('App\Mascota');
+    }
+
+    public function getFullnameAttribute (){
+        return $this->nombre_dueño ." ". $this->appaterno_dueño." ".$this->apmaterno_dueño;
+    }
 
 }

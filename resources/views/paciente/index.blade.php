@@ -9,7 +9,7 @@
 							<h4 class="card-title">Pacientes:</h4>
 						</div>
 						<div class="col-sm-4 text-center">
-							<a class="btn btn-success btn-sm" href="{{ route('empleados.create') }}">
+							<a class="btn btn-success btn-sm" href="{{ route('pacientes.create') }}">
 								<i class="fa fa-plus"></i><strong> Agregar Paciente</strong>
 							</a>
 						</div>
@@ -32,25 +32,19 @@
 									</tr>
 									</thead>
 									<tbody>
-									@foreach ($empleados as $empleado)
+									@foreach ($pacientes as $paciente)
 											<tr>
-												<td>{{ $empleado->id }}</td>
-												<td>{{ $empleado->nombre }}</td>
-												<td>{{ $empleado->appaterno }}</td>
-												<td>{{ $empleado->apmaterno }}</td>
-												<td>{{ $empleado->rfc }}</td>
-												@if(count($empleado->laborales) > 0)
-												<td>{{ $empleado->laborales->last()->puesto->nombre }}</td>
-												<th>{{ $empleado->laborales->last()->oficina->nombre }}</th>
-												@else
-												<td> -- </td>
-												<td> -- </td>
-												@endif
+												<td>{{ $paciente->Fullname }}</td>
+												<td>----</td>
+												<td>----</td>
+												<td>{{ $paciente->telefono }}</td>
+												<td>{{ $paciente->celular }}</td>
+												<td>{{ $paciente->correo }}</td>
 												<td class="text-center">
-													<a class="btn btn-primary btn-sm" href="{{ route('empleados.show', ['empleado' => $empleado]) }}">
+													<a class="btn btn-primary btn-sm" href="{{ route('pacientes.show', ['paciente' => $paciente]) }}">
 														<i class="fa fa-eye"></i> Ver
 													</a>
-													<a class="btn btn-warning btn-sm" href="{{ route('empleados.edit', ['empleado' => $empleado]) }}">
+													<a class="btn btn-warning btn-sm" href="{{ route('pacientes.edit', ['paciente' => $paciente]) }}">
 														<i class="fa fa-pencil"></i> Editar
 													</a>
 												</td>
