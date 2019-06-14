@@ -227,7 +227,12 @@ dd{color: black;}
 
 hr{
     color: black;
-  height: 12px;
+    height: 12px;
     border: 0;
     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-    }
+}
+
+.fondo-azul{
+    background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+
+}

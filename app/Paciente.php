@@ -30,9 +30,13 @@ class Paciente extends Model
         'updated_at', 'created_at', 'deleted_at'
     ];
 
-    public function mascota()
-    {
-        return $this->hasOne('App\Mascota');
+    public function mascotas(){
+        return $this->belongsToMany('\App\Mascotas','duenio_mascota');
+            //->withPivot('menu_id','status');
+    }
+
+    public function direccion() {
+        return $this->hasOne('App\Direccion');
     }
 
     public function getFullnameAttribute (){

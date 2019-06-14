@@ -74,28 +74,26 @@
                         <a class="dropdown-item" href="{{ route('pacientes.create') }}"><span>Alta Paciente</span> <i class="fa fa-plus float-right"></i></a>
                         <a class="dropdown-item" href="{{ route('pacientes.index') }}"><span>Buscar Paciente</span> <i class="fa fa-search"></i></a>
                     </div>
-                </li>      
-                
-                
-                
-                    {{-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                            Precargas
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="}">Descuentos<i class="fa fa-plus float-right"></i></a>
-                            <a class="dropdown-item" href="">Contratos<i class="fa fa-plus float-right"></i></a>
-                            <a class="dropdown-item" href="">Faltas<i class="fa fa-plus float-right"></i></a>
-                            <a class="dropdown-item" href="">Áreas<i class="fa fa-plus float-right"></i></a>
-                            <a class="dropdown-item" href="">Puestos<i class="fa fa-plus float-right"></i></a>
-                            <a class="dropdown-item" href="">Bajas<i class="fa fa-plus float-right"></i></a>
-                            <a class="dropdown-item" href="">Bancos<i class="fa fa-plus float-right"></i></a>
-                            <a class="dropdown-item" href="">Niveles<i class="fa fa-plus float-right"></i></a>
-                            <a class="dropdown-item" href="">Estados<i class="fa fa-plus float-right"></i></a>
-                            <a class="dropdown-item" href="">Giros<i class="fa fa-plus float-right"></i></a>
-                            <a class="dropdown-item" href="">Hospitales<i class="fa fa-plus float-right"></i></a>
-                        </div>
-                    </li>   --}}  
+                </li>                      
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        <strong><i class="fas fa-redo-alt"></i> Precargas</strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('razas.index') }}"><i class="fas fa-feather"></i> Razas</a>
+                        {{-- <a class="dropdown-item" href="}">Descuentos<i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="">Contratos<i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="">Faltas<i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="">Áreas<i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="">Puestos<i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="">Bajas<i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="">Bancos<i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="">Niveles<i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="">Estados<i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="">Giros<i class="fa fa-plus float-right"></i></a>
+                        <a class="dropdown-item" href="">Hospitales<i class="fa fa-plus float-right"></i></a> --}}
+                    </div>
+                </li>    
                 
                 
                 

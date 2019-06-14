@@ -65,7 +65,7 @@ class PacienteController extends Controller
                         ->withInput();
         }
         $paciente = Paciente::create($request->all());
-        return redirect()->route('pacientes.index');
+        return redirect()->route('pacientes.show', ['paciente' => $paciente]);
     }
 
     /**
@@ -122,7 +122,7 @@ class PacienteController extends Controller
                         ->withInput();
         }
         $paciente->update($request->all());
-        return redirect()->route('pacientes.index');
+        return redirect()->route('pacientes.show', ['paciente' => $paciente]);
     }
 
     /**

@@ -39,3 +39,11 @@ Route::resource('provedores.datosbancarios','Provedor\ProveedorDatosBancariosCon
 
 //Pacientes
 Route::resource('pacientes', 'Paciente\PacienteController');
+Route::resource('pacientes.direccion', 'Paciente\PacienteDireccionController');
+
+//Mascotas
+Route::resource('pacientes.mascotas', 'Mascota\MascotaController');
+Route::resource('mascotas.historial', 'Mascota\HistorialController');
+
+//Precargas
+Route::resource('razas', 'Precargas\RazaController');

@@ -36,6 +36,6 @@ class CreateDuenioTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dueño');
+        Schema::dropIfExists('duenio');
     }
 }

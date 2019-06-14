@@ -57,35 +57,5 @@
 				<i class="fa fa-pencil"></i><strong> Editar</strong>
 			</a>
 		</div>
-		<div class="col-sm-4">
-			<h4 class="card-title">Mascotas:</h4>
-		</div>
-		<div class="row rounded border p-4 m-3">
-			<div class="col-md-12">
-				<table class="table table-striped table-hover">
-				  <thead class="thead-light">
-				    <tr>
-				      <th scope="col">Nombre</th>
-				      <th scope="col">Raza</th>
-				      <th scope="col">Acción</th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				      <td>Mark</td>
-				      <td>Otto</td>
-				      <td>
-				      	<a class="btn btn-primary btn-sm" href="{{ route('pacientes.index') }}">
-							<i class="fa fa-pencil"></i><strong> Ver Historial</strong>
-						</a>
-						<a class="btn btn-success btn-sm" href="{{ route('pacientes.index') }}">
-							<i class="fa fa-pencil"></i><strong> Nuevo Historial</strong>
-						</a>
-				      </td>
-				    </tr>
-				  </tbody>
-				</table>
-			</div>
-		</div>
 	</div>
 </div>
